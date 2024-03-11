@@ -1,0 +1,17 @@
+Run the application:
+ 1. cd $PROJECT_ROOT
+ 2. docker-compose up && docker-compose rm -fsv
+     Wait until infra is up
+ 3. ./mvnw spring-boot:run
+     Wait until application startup
+ 4. Please find some scripts in the directory $PROJECT_ROOT/scripts to test the running application
+
+Run tests:
+Since e2e tests are implemented in python3 running them requires python3 and pipenv.
+ 1. cd $PROJECT_ROOT
+ 2. docker-compose up && docker-compose rm -fsv
+     Wait until infra is up
+ 3. ./mvnw spring-boot:run
+     Wait until application startup
+ 4. pipenv install
+ 5. pipenv run python3 e2e.py
